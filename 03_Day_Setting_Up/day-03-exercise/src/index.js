@@ -1,7 +1,11 @@
 // index.js
 import React from 'react'
 import ReactDOM from 'react-dom'
-import nathimage from './images/nath.jpg'
+import nath from './images/nath.jpg'
+import css_logo from './images/css_logo.png'
+import html_logo from './images/html_logo.png'
+import js_logo from './images/js_logo.png'
+import react_logo from './images/react_logo.png'
 // To get the root element from the HTML document
 
 // JSX element, header
@@ -9,10 +13,10 @@ const welcome = 'Welcome to 30 Days Of React'
 const title = 'Getting Started React'
 const subtitle = 'JavaScript Library'
 const author = {
-  firstName: 'Asabeneh',
-  lastName: 'Yetayeh',
+  firstName: 'Nathaniel',
+  lastName: 'Dehinbo',
 }
-const date = 'Oct 2, 2020'
+const date = 'Oct 6, 2023'
 
 // JSX element, header
 const header = (
@@ -38,7 +42,7 @@ const result = (
   </p>
 )
 
-const yearBorn = 1820
+const yearBorn = 1999
 const currentYear = new Date().getFullYear()
 const age = currentYear - yearBorn
 const personAge = (
@@ -52,9 +56,27 @@ const personAge = (
 const techs = ['HTML', 'CSS', 'JavaScript']
 const techsFormatted = techs.map((tech) => <li>{tech}</li>)
 
-const user = (
-  <div>
-    <img src={nathimage} alt='nath' />
+const nath2 = (
+  <div class= 'column'>
+    <img src={html_logo} alt='nath' />
+  </div>
+)
+
+const nath3= (
+  <div class= 'column'>
+    <img src={css_logo} alt='nath' />
+  </div>
+)
+
+const nath4 = (
+  <div class= 'column'>
+    <img src={js_logo} alt='nath' />
+  </div>
+)
+
+const nath5 = (
+  <div class= 'column'> 
+    <img src={react_logo} alt='nath' />
   </div>
 )
 
@@ -92,8 +114,11 @@ const app = (
   <div className='app'>
     {header}
     {main}
+    {nath2}
+    {nath3}
+    {nath4}
+    {nath5}
     {footer}
-    {user}
   </div>
 )
 
